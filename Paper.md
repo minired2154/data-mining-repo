@@ -15,18 +15,18 @@
 
 
 Methods we will try:
+  * K-means with *Classes to clusters evaluation*  
   * MultiLayerPerceptron *(Neural Network)*
   * IBK *(K-nearest)*
   * RandomForest
   * J48 *(Decision Trees)*
-  * K-means with *Classes to clusters evaluation*  
 
 ## 4.**Experiments** :
 &ensp; First, clustering the data by **Simple K Means**.Using the *Euclidean Distance* and number of clusters is *6*. As we can see, it is not the result we want to get and this method can't applied to classifying that the accuracy calculated by confusion matrix is ***26.8293%*** which is extremely low.
 ![](https://i.imgur.com/QLxUJzv.png)  
 **Fig.1 Confusion Matrix of Simple K Means**
 
-&ensp; Second
+&ensp; Secondly,
 
 ## 5.**Conclusion** :
 
