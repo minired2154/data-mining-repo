@@ -15,7 +15,7 @@
 
 
 Methods we will try:
-  * K-means with *Classes to clusters evaluation*  
+  * K-means *with Classes to clusters evaluation*  
   * MultiLayerPerceptron *(Neural Network)*
   * IBK *(K-nearest)*
   * RandomForest
@@ -26,7 +26,10 @@ Methods we will try:
 ![](https://i.imgur.com/QLxUJzv.png)  
 **Fig.1 Confusion Matrix of Simple K Means**
 
-&ensp; Secondly,
+&ensp; Secondly, comparing the different classifier by accuracy, and put the other results of two independent preprocessing method in one table. *RandomForest* stays the highest accuracy in all results, undoubtedly, it would be test forward by arguments adjusting and multiple preprocessing. Besides, reducing attributes results making accuracy of the methods related to decision trees lower. In the other hand, after *InterquartileRange* preprocessing, most of them improved especially for Decision Tree group.
+![](https://i.imgur.com/fJFk55J.png)
+**Fig.2 Comparison of Different Methods**  
+*[1] "4 attr." presents to volatile acidity, total sulfur dioxide, sulfates, alcohol, these 4 attributes selected by "CfsSubsetEval" evaluator with "Best First"*
 
 ## 5.**Conclusion** :
 
