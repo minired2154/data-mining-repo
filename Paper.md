@@ -11,16 +11,23 @@
 ## 3.**Mine the Data** :
 &ensp; After preprocessing, we tested the following methods to find the rule of data where we could calculate accuracy by classifying the test set.  
 &ensp; There are two major way to find the rule. First, using the classifier functions or Decision trees .Secondly, clustering the data and we evaluation the clusters to their possible classes.  
-&ensp; It is a simple strategy that we used is choosing the highest accuracy in these methods with unmodified arguments. Processing to the next step, adjusting the arguments try to get the higher accuracy, therefore the final goal we want to achieve is to find the best accuracy as possible to classify the quality of wine by these attributes experimentally filtered or chosen by heuristic.
-&ensp;
+&ensp; It is a simple strategy that we used is choosing the highest accuracy in these methods with non-preprocessed dataset. Processing to the next step, adjusting the arguments try to get the higher accuracy, therefore the final goal we want to achieve is to find the best accuracy as possible to classify the quality of wine by these attributes experimentally filtered or chosen by heuristic.
+
 
 Methods we will try:
   * MultiLayerPerceptron *(Neural Network)*
   * IBK *(K-nearest)*
   * RandomForest
   * J48 *(Decision Trees)*
-  * K-means with *Classes to clusters evaluation*
+  * K-means with *Classes to clusters evaluation*  
+
 ## 4.**Experiments** :
+&ensp; First, clustering the data by **Simple K Means**.Using the *Euclidean Distance* and number of clusters is *6*. As we can see, it is not the result we want to get and this method can't applied to classifying that the accuracy calculated by confusion matrix is ***26.8293%*** which is extremely low.
+![](https://i.imgur.com/QLxUJzv.png)  
+**Fig.1 Confusion Matrix of Simple K Means**
+
+&ensp; Second
+
 ## 5.**Conclusion** :
 
 
