@@ -9,13 +9,17 @@
 因為是從網站上直接抓下來知名的dataset，檢查過後並沒有任何Data Missing的情況。
 
 ## 3.**Mine the Data** :
-&ensp; We test the following methods to find the rule of data where we could calculate accuracy by classifying the test set.  
-&ensp; There are two major way to find the rule, first, using the classifier functions or Decision trees .Second, clustering the data and we evaluation the clusters to their possible classes.
-  * MultiLayerPerceptron
-  * IBK(K-nearest)
+&ensp; After preprocessing, we tested the following methods to find the rule of data where we could calculate accuracy by classifying the test set.  
+&ensp; There are two major way to find the rule. First, using the classifier functions or Decision trees .Secondly, clustering the data and we evaluation the clusters to their possible classes.  
+&ensp; It is a simple strategy that we used is choosing the highest accuracy in these methods with unmodified arguments. Processing to the next step, adjusting the arguments try to get the higher accuracy, therefore the final goal we want to achieve is to find the best accuracy as possible to classify the quality of wine by these attributes experimentally filtered or chosen by heuristic.
+&ensp;
+
+Methods we will try:
+  * MultiLayerPerceptron *(Neural Network)*
+  * IBK *(K-nearest)*
   * RandomForest
-  * J48
-  * K-means with Classes to clusters evaluation
+  * J48 *(Decision Trees)*
+  * K-means with *Classes to clusters evaluation*
 ## 4.**Experiments** :
 ## 5.**Conclusion** :
 
