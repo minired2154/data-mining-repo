@@ -22,14 +22,18 @@ Methods we will try:
   * J48 *(Decision Trees)*
 
 ## 4.**Experiments** :
-&ensp; First, clustering the data by **Simple K Means**.Using the *Euclidean Distance* and number of clusters is *6*. As we can see, it is not the result we want to get and this method can't applied to classifying that the accuracy calculated by confusion matrix is ***26.8293%*** which is extremely low.
+&ensp; First, clustering the data by **Simple K Means**.Using the *Euclidean Distance* and number of clusters is *6*. As we can see, it is not the result we want to get and this method can't applied to classifying that the accuracy calculated by confusion matrix is ***26.8293%*** which is extremely low.  
 ![](https://i.imgur.com/QLxUJzv.png)  
 **Fig.1 Confusion Matrix of Simple K Means**
 
-&ensp; Secondly, comparing the different classifier by accuracy, and put the other results of two independent preprocessing method in one table. *RandomForest* stays the highest accuracy in all results, undoubtedly, it would be test forward by arguments adjusting and multiple preprocessing. Besides, reducing attributes results making accuracy of the methods related to decision trees lower. In the other hand, after *InterquartileRange* preprocessing, most of them improved especially for Decision Tree group.
-![](https://i.imgur.com/fJFk55J.png)
+&ensp; Secondly, comparing the different classifier by accuracy, and put the other results of two independent preprocessing method in one table. *RandomForest* stays the highest accuracy in all results, undoubtedly, it would be test forward by arguments adjusting and multiple preprocessing. Besides, reducing attributes results making accuracy of the methods related to decision trees lower. In the other hand, after *InterquartileRange* preprocessing, most of them improved especially for Decision Tree group.  
+![](https://i.imgur.com/fJFk55J.png)  
 **Fig.2 Comparison of Different Methods**  
 *[1] "4 attr." presents to volatile acidity, total sulfur dioxide, sulfates, alcohol, these 4 attributes selected by "CfsSubsetEval" evaluator with "Best First"*
+
+Finally, we can evolve the study of *RandomForest* now and it would shows the interaction of accuracy with diverse preprocess simultaneously.  
+![](https://i.imgur.com/gUuc62j.png)  
+
 
 ## 5.**Conclusion** :
 
