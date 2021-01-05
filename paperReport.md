@@ -22,13 +22,16 @@ We use the function at filter/unsupervise/discretization to discretize to data.
 * delete attribute:</br>
 We use CfbsubsetEval function with Bestfirst method to find the best related attribute with "quality", and delete it.</br>
 
-&ensp; In Random Forest, we try all these method, the result isn’t always turn to positive way. Among these method “remove outliers” is the best method that can improve our accuracy. And other two method are always turn into lower accuracy.</br>
+After data preprocess, the result isn't alwasy turn to positive way.
+
+&ensp; In Random Forest, Among these method “remove outliers” is the best method that can improve our accuracy. And other two method are always turn into lower accuracy.</br>
 &ensp; In Multilayer, remove outliers and delete attribute can improve our accuracy, but discretization can’t.</br>
 &ensp; In K-nearest, remove outliers and delete attribute can improve our accuracy, but discretization can’t.</br>
-&ensp; You can see the brief summary result below.  
-![](https://i.imgur.com/hWc3slN.png)  
+&ensp; In J48, whatever prepocess we do, the result will lead to accuracy decrease. But there are some thing worth noticing. If we remove attribute affter outliers, the accuracy will rise up 2%.</br>
+&ensp; You can see the brief result from below.  
+![](https://i.imgur.com/hWc3slN.png)
 
-&ensp; According the result above ,after discretize will always cause accuracy decrease or even malfunction. In my hypothesis, it is because the discretize we use force the data seperate to N-bins and the attribute will turn to nominal so, it is diffical to seperate different attribute by the same rule.    
+&ensp; According to the above result. After discretize will always decrease the accuracy or even malfunction. In our hypothesis, the reason that cause this phenomenon is because of the feature of discretize. Discretize can handle outliers, and seperate data into different interval. But there are few outlier in this dataset, and also the feature of the same quality wine fall on large interval. We don't have the decisive attribute that can help us to determine the quality.
 
 
 ## 3.**Mine the Data** :
