@@ -62,7 +62,6 @@ Finally, we can evolve the study of *RandomForest* now and it would shows the in
 
 
 ## 5.**Conclusion** :
-
-
+After we try all the method,  we found that random forest is the best choice whithin these method. But we don't know why the random forest is the best choice in this dataset, and also the parameter.
 ### **Reference** :
 Dataset contributed by *Paulo Cortez (Univ. Minho), Antonio Cerdeira, Fernando Almeida, Telmo Matos and Jose Reis (CVRVV) @ 2009*
